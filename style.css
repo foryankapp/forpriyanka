@@ -1,0 +1,104 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(120deg, #ffe6f0, #e6f0ff);
+  min-height: 100vh;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.birthday-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 180px;
+  height: 270px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  margin: auto;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background: white;
+  padding: 10px 10px 40px 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.flip-card-front:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #444;
+}
+
+.flip-card-back {
+  background: #ffe6ec;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  color: #b12a50;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
