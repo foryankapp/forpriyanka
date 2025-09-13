@@ -18,8 +18,8 @@ body {
 .subtitle {
   font-size: 1.2rem;
   color: #6c757d;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .flip-card {
