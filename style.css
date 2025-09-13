@@ -2,7 +2,6 @@ body {
   font-family: 'Quicksand', sans-serif;
   background: linear-gradient(120deg, #ffe6f0, #e6f0ff);
   min-height: 100vh;
-  padding-bottom: 40px;
   margin: 0;
 }
 
@@ -16,10 +15,8 @@ body {
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #6c757d;
-  margin-right: 20%;
-  margin-left: 20%;
 }
 
 .flip-card {
@@ -100,7 +97,6 @@ body {
 }
 
 .footer-text {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   color: #6c757d;
 }
-
